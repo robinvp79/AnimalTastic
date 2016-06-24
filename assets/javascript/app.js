@@ -24,10 +24,10 @@ function displayMusicianGif(){
 				alt:results[i].images.fixed_height.url
 			});
 			(musicianImage).on('click',function(){
-				var x = this.src;
-				var y = this.alt;
-				this.src = y;
-				this.alt = x;
+				var newALT = this.src;
+				var newSRC = this.alt;
+				this.src = newSRC;
+				this.alt = newALT;
 			})
 			musicianDiv.append(p);
 			musicianDiv.append(musicianImage);
